@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>huella</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0.5rem;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        a {
+            color: #000000;
+        }
+        .preview {
+            width: 12rem;
+            display: inline-block;
+            margin: 0.25rem;
+            box-shadow: 1px 1px 2px 0px #b9b9b9;
+            background: #ffffff;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #ffffff;
+        }
+        .preview .inner  {
+            line-height: 2.5rem;
+            font-size: 2.5rem;
+            color: #000000;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        .label {
+            display: inline-block;
+            width: 100%;
+            font-size: 0.75rem;
+            font-family: Monaco, monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #fff;
+            color: #585858;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="huella.css" />
+</head>
+<body>
+
+    <h1>huella</h1>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="huella huella-badge"></i>
+            </span>
+            <br>
+            <span class='label' title='badge'>badge</span>
+        </div>
+
+
+    <h3>Font generated with <a href="https://marketplace.visualstudio.com/items?itemName=carlosorozcojimenez.icon-font-bundler" target="_blank">Icon Font Bundler</a></h3>
+</body>
+</html>

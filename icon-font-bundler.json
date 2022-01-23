@@ -1,0 +1,11 @@
+[
+    {
+      "type": "fantasticon",
+      "inputDir": "src/",
+      "outputDir": "webapp/icons/",
+      "prefix": "huella",
+      "name": "huella",
+      "normalize": true
+    }
+  ]
+  

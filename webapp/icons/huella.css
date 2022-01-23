@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "huella";
+    src: url("./huella.ttf?c1e05fda988703dc52bc855311d0e19b") format("truetype"),
+url("./huella.eot?c1e05fda988703dc52bc855311d0e19b#iefix") format("embedded-opentype"),
+url("./huella.woff2?c1e05fda988703dc52bc855311d0e19b") format("woff2"),
+url("./huella.woff?c1e05fda988703dc52bc855311d0e19b") format("woff");
+}
+
+i[class^="huella-"]:before, i[class*=" huella-"]:before {
+    font-family: huella !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.huella-badge:before {
+    content: "\f101";
+}
