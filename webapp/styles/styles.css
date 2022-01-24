@@ -35,7 +35,7 @@ body header .headerWrapper {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 1rem;
+  padding: 0;
 }
 body header:before {
   content: "";
@@ -59,15 +59,24 @@ body header nav {
   opacity: 0;
   animation: showHeader 1s 1s forwards;
 }
+body header nav.right ul {
+  justify-content: start;
+}
+body header nav.right ul li {
+  padding-left: 0;
+}
 body header nav a {
   color: white;
 }
 body header nav ul {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: end;
 }
 body header nav ul li {
   z-index: 5;
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem 0 0.5rem 0.25rem;
   display: inline-flex;
   margin: 0.5rem;
   font-size: 0.925rem;
@@ -88,7 +97,7 @@ body header.scrolled:before {
 }
 body header.scrolled img {
   height: 60px;
-  margin: 0.25rem 0 0 1rem;
+  margin: 0.25rem 0.5rem 0 0.5rem;
   filter: brightness(0) invert(0) invert(79%) sepia(72%) saturate(3257%) hue-rotate(135deg) brightness(88%) contrast(97%);
   filter: brightness(0) invert(0);
 }
@@ -179,6 +188,7 @@ body section#home h1 {
   font-size: 2.5rem;
   border: none;
   text-shadow: 0 0 10px black;
+  text-align: center;
 }
 body section#home span {
   font-size: 1.25rem;
@@ -225,15 +235,36 @@ body .imageHome::before {
   right: 0;
 }
 body .colorHorario {
+  background-color: #1e1e1e;
+}
+body #horario {
   padding: 0;
 }
-body .colorHorario .left {
+body #horario .left {
   background-color: #1e1e1e;
   background-image: url(../media/logo_xl.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
   background-size: 50%;
+}
+body #horario .right {
+  padding: 0.5rem;
+}
+body #horario .ubicacion {
+  margin-top: 1.5rem;
+}
+body #horario h1 {
+  color: white;
+  border-color: white;
+  text-shadow: none;
+}
+body #horario span {
+  color: white;
+  text-shadow: none;
+}
+body #horario a {
+  color: #dbdbdb !important;
 }
 body .imageMenu {
   background-image: url(../media/fondos/tartar.jpeg);

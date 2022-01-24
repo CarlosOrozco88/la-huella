@@ -45,7 +45,7 @@ body {
             justify-content: center;
             align-items: center;
             box-sizing: border-box;
-            padding: 0 1rem;
+            padding: 0;
         }
 
         &:before {
@@ -72,16 +72,29 @@ body {
             opacity: 0;
             animation: showHeader 1s 1s forwards;
 
+            &.right {
+              ul {
+                justify-content: start;
+                li {
+                  padding-left: 0;
+                }
+              }
+            }
+
             a {
                 color: white;
             }
 
+
             ul {
                 display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: end;
 
                 li {
                     z-index: 5;
-                    padding: 0.5rem 0.25rem;
+                    padding: 0.5rem 0 0.5rem 0.25rem;
                     display: inline-flex;
                     margin: 0.5rem;
                     font-size: 0.925rem;
@@ -109,7 +122,7 @@ body {
 
             img {
                 height: 60px;
-                margin: 0.25rem 0 0 1rem;
+                margin: 0.25rem 0.5rem 0 0.5rem;
                 filter: brightness(0) invert(0) invert(79%) sepia(72%) saturate(3257%) hue-rotate(135deg) brightness(88%) contrast(97%);
                 filter: brightness(0) invert(0);
             }
@@ -214,13 +227,14 @@ body {
           // border: 0.25rem solid #1e1e1e;
           // border: 0.25rem solid white;
           padding: 1rem;
-          color: white;
+          color: white; 
 
           h1 {
-              font-size: 2.5rem;
-              border: none;
-              text-shadow: 0 0 10px black;
-          }
+            font-size: 2.5rem;
+            border: none;
+            text-shadow: 0 0 10px black;
+            text-align: center;
+          } 
           span {
               font-size: 1.25rem;
               position: relative;
@@ -272,16 +286,38 @@ body {
       }
     }
     .colorHorario {
-        padding: 0;
+      background-color: #1e1e1e;
+    }
+    #horario {
+      padding: 0;
 
-        .left {
-          background-color: #1e1e1e;
-          background-image: url(../media/logo_xl.png);
-          background-position: center center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-size: 50%;
-        }
+      .left {
+        background-color: #1e1e1e;
+        background-image: url(../media/logo_xl.png);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 50%;
+      }
+      .right {
+        padding: 0.5rem;
+      }
+      .ubicacion {
+        margin-top: 1.5rem;
+      }
+      h1 {
+        color: white;
+        border-color: white;
+        text-shadow: none;
+      }
+      span {
+        color: white;
+        text-shadow: none;
+      }
+      a {
+        color: #dbdbdb !important;
+      }
+
     }
     .imageMenu {
         background-image: url(../media/fondos/tartar.jpeg);

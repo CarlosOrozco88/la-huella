@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => startJS())
 
 function startJS() {
+    handleScroll({currentTarget: document.body});
     window.addEventListener('scroll', handleScroll);
 }
 
