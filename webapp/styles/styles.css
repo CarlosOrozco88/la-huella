@@ -182,7 +182,8 @@ body section span {
   text-shadow: 0 0 10px white;
 }
 body section#home {
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   padding: 1rem;
   color: white;
 }
