@@ -183,7 +183,6 @@ body section span {
 }
 body section#home {
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   padding: 1rem;
   color: white;
 }
@@ -268,6 +267,9 @@ body #horario span {
 }
 body #horario a {
   color: #dbdbdb !important;
+}
+body #horario .overlay {
+  cursor: pointer;
 }
 body .imageMenu {
   background-image: url(../media/fondos/tartar.jpeg);

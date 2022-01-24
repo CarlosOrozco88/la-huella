@@ -46,3 +46,8 @@ function scrollToSection(event) {
         behavior: "smooth"
     })
 }
+
+function hideOverlay(event) {
+    event.preventDefault();
+    event.currentTarget.classList.remove("overlay");
+}
